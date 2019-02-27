@@ -1,5 +1,6 @@
 package com.bitdemic.dreigewinnt;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -136,5 +137,10 @@ public class playActivity extends AppCompatActivity {
             ImageView imageView = (ImageView) gridLayout.getChildAt(i);
             imageView.setImageDrawable(null);
         }
+    }
+
+    public void backButton(View view){
+        Intent intent = new Intent(playActivity.this, MainActivity.class);
+        startActivity(intent);
     }
 }

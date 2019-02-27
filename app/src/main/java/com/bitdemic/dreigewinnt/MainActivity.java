@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void pressStartButton(View view){
+        YoYo.with(Techniques.Pulse)
+                .duration(2000)
+                .repeat(0)
+                .playOn(findViewById(R.id.startButton));
         Intent intent = new Intent(MainActivity.this, playActivity.class);
         startActivity(intent);
     }
