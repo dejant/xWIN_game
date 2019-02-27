@@ -35,20 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 .duration(2000)
                 .repeat(0)
                 .playOn(findViewById(R.id.xLogo));
-        // ring xWIN header
+        // flip in xWIN header
         //
         YoYo.with(Techniques.FlipInX)
                 .duration(2000)
                 .repeat(0)
                 .playOn(findViewById(R.id.xWINtextView));
-
-        /*
-        ImageView imageView = findViewById(R.id.xLogo);
-        RotateAnimation xButton = new RotateAnimation(0, 360, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        xButton.setDuration(20000);
-        xButton.setRepeatCount(Animation.INFINITE);
-        imageView.startAnimation(xButton);
-        */
     }
 
 }
