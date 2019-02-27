@@ -28,6 +28,7 @@ public class playActivity extends AppCompatActivity {
     Button playAgainButton;
     ImageView indicator;
     ImageView indicatorTwo;
+    ImageView counter;
     TextView textView;
     TextView textView1;
 
@@ -51,7 +52,7 @@ public class playActivity extends AppCompatActivity {
     // Methoden
     //
     public void dropIn(View view){
-        ImageView counter = (ImageView) view;
+        counter = (ImageView) view;
 
         // Feld reservieren mittels Tag
         //
@@ -107,7 +108,7 @@ public class playActivity extends AppCompatActivity {
                     }
                 }
                 if (!gameActive){
-                    String WinnerMessage = "Unentschieden!";
+                    String WinnerMessage = "Draw!";
                     textView.setText(WinnerMessage);
                     textView1.setText(WinnerMessage);
                     textView.setVisibility(View.VISIBLE);
@@ -123,7 +124,7 @@ public class playActivity extends AppCompatActivity {
             gameState[i]=2;
         }
         gameActive=true;
-        player=1;
+        player=0;
         indicator.setVisibility(View.VISIBLE);
         indicatorTwo.setVisibility(View.INVISIBLE);
         playAgainButton.setVisibility(View.INVISIBLE);
