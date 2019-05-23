@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/xWINtextView"
-        app:srcCompat="@drawable/xred" />
+        app:srcCompat="@drawable/xblack" />
 
     <TextView
         android:id="@+id/xWINtextView"
